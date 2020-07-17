@@ -1,30 +1,30 @@
-class ObserverList{
-  constructor(){
-    this.observerList = [];
-  }
+class ObserverList {
+    constructor() {
+        this.observerList = [];
+    }
 
-  add(obj){
-    this.observerList.push(obj);
-  }
+    add(obj) {
+        this.observerList.push(obj);
+    }
 
-  get(index){
-    if(index > -1 && index < this.observerList.length)
-      return this.observerList[index];
+    get(index) {
+        if (index > -1 && index < this.observerList.length)
+            return this.observerList[index];
 
-    return null;
-  }
+        return null;
+    }
 
-  count(){
-    return this.observerList.length;
-  }
+    count() {
+        return this.observerList.length;
+    }
 
-  indexOf(obj){
-    return this.observerList.indexOf(obj);
-  }
+    indexOf(obj) {
+        return this.observerList.indexOf(obj);
+    }
 
-  removeAt(index){
-    this.observerList.splice(index, 1);
-  }
+    removeAt(index) {
+        this.observerList.splice(index, 1);
+    }
 }
 
 module.exports = ObserverList;

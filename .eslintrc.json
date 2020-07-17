@@ -4,7 +4,7 @@
         "ecmaVersion": 2015,
         "sourceType": "module"
     },
-    "extends": "eslint:recommended", //base configuration
+    "extends": ["eslint:recommended", "prettier"], //base configuration
     "env": {
         "commonjs": true,
         "browser": true,
@@ -15,8 +15,8 @@
         "semi": ["error", "always"]
     },
     "overrides": [
-        { 
-            "files": ["**.test.js"], 
+        {
+            "files": ["**.test.js"],
             "rules": {
                 "semi": ["warn", "always"]
             },
