@@ -1,0 +1,28 @@
+{
+    // peer (basic configuration for ESLint)
+    "parserOptions": {
+        "ecmaVersion": 2015,
+        "sourceType": "module"
+    },
+    "extends": "eslint:recommended", //base configuration
+    "env": {
+        "commonjs": true,
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "indent": ["error", 2],
+        "semi": ["error", "always"]
+    },
+    "overrides": [
+        { 
+            "files": ["**.test.js"], 
+            "rules": {
+                "semi": ["warn", "always"]
+            },
+            "env": {
+                "jest": true
+            }
+        }
+    ]
+}
